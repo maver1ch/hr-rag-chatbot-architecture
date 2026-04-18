@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HR Chatbot Architecture | HTI Group</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <!-- Dynamic Background Elements -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+
+    <nav class="navbar">
+        <div class="logo">HTI Group <span>| Engineering</span></div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content fade-in-up">
+            <span class="badge">Architecture Case Study</span>
+            <h1 class="title">Enterprise HR Chatbot</h1>
+            <p class="subtitle">The Evolution from Proof of Concept (POC) to a Scalable, Production-Ready AWS Product.</p>
+        </div>
+    </header>
+
+    <main class="timeline-container">
+        <!-- Timeline Line -->
+        <div class="timeline-line"></div>
+
+        <!-- Section 1: The Foundation (POC) -->
+        <div class="timeline-section">
+            <div class="phase-marker">
+                <span class="phase-dot"></span>
+                <h3 class="phase-title">Phase 1: Proof of Concept</h3>
+            </div>
+
+            <!-- Card 1 -->
+            <article class="glass-card reveal">
+                <div class="card-text">
+                    <div class="step-num">01</div>
+                    <h2>High-Level System Architecture</h2>
+                    <p>The foundation of the HR Chatbot. This architecture details the core interaction flow between the front-end user interfaces, the centralized API gateways, and the underlying AI knowledge engines before scaling up.</p>
+                </div>
+                <div class="card-visual">
+                    <img src="assets/1. High Level Architecture.png" alt="High Level Architecture" class="zoomable" loading="lazy">
+                    <div class="img-overlay">Click to enlarge</div>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="glass-card reverse reveal">
+                <div class="card-text">
+                    <div class="step-num">02</div>
+                    <h2>Multi-Agent Router (ReAct)</h2>
+                    <p>The brain of the chatbot. Utilizing the ReAct methodology, queries are intercepted, understood, and dynamically routed to specialized sub-agents. This allows the bot to handle complex HR policies, leave requests, and payroll inquiries with high accuracy.</p>
+                </div>
+                <div class="card-visual">
+                    <img src="assets/2. Multi Agent Router.png" alt="Multi Agent Router" class="zoomable" loading="lazy">
+                    <div class="img-overlay">Click to enlarge</div>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="glass-card reveal">
+                <div class="card-text">
+                    <div class="step-num">03</div>
+                    <h2>Data Ingestion Pipeline</h2>
+                    <p>To support massive enterprise data, a robust offline pipeline was engineered. It automatically ingests, chunks, and maps unstructured HR documentations into high-dimensional vector space for semantic retrieval.</p>
+                </div>
+                <div class="card-visual">
+                    <img src="assets/3. Data Ingestion Pipeline.png" alt="Data Ingestion Pipeline" class="zoomable" loading="lazy">
+                    <div class="img-overlay">Click to enlarge</div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Section 2: Production Scaling -->
+        <div class="timeline-section" style="margin-top: 8rem;">
+            <div class="phase-marker">
+                <span class="phase-dot highlight"></span>
+                <h3 class="phase-title highlight-text">Phase 2: Enterprise Product Level</h3>
+            </div>
+
+            <!-- Card 4 -->
+            <article class="glass-card reverse reveal">
+                <div class="card-text">
+                    <div class="step-num highlight-num">04</div>
+                    <h2>AWS Cloud Migration</h2>
+                    <p>Transitioning from local/on-prem POC to AWS. Leveraging fully managed services and container orchestration to achieve 99.9% uptime, auto-scaling capabilities, and enterprise-grade security within a Virtual Private Cloud (VPC).</p>
+                </div>
+                <div class="card-visual">
+                    <img src="assets/4. AWS_Migration_Architecture.png" alt="AWS Cloud Migration Architecture" class="zoomable" loading="lazy">
+                    <div class="img-overlay">Click to enlarge</div>
+                </div>
+            </article>
+
+            <!-- Card 5 (New Diagram) -->
+            <article class="glass-card reveal">
+                <div class="card-text">
+                    <div class="step-num highlight-num">05</div>
+                    <h2>Serverless Ingestion Pipeline</h2>
+                    <p>An alternative, highly optimized ingestion architecture utilizing serverless cloud functions. Designed for event-driven document processing to minimize idle computing costs and maximize real-time scalability during spikes in data upload.</p>
+                </div>
+                <div class="card-visual">
+                    <img src="assets/5. Serverless Ingestion Pipeline.png" alt="Serverless Ingestion Pipeline" class="zoomable" loading="lazy">
+                    <div class="img-overlay">Click to enlarge</div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Designed by System Engineering | HTI Group</p>
+        </div>
+    </footer>
+
+    <!-- Fullscreen Image Modal -->
+    <div id="image-modal" class="modal">
+        <span class="close-modal"><i class="fa-solid fa-xmark"></i></span>
+        <div class="modal-body">
+            <img class="modal-content" id="modal-img">
+            <div id="modal-caption"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
